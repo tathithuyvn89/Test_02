@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tổng số nguyên dương của mảng </title>
+</head>
+<body>
+<script> 
+    function checkPositiveInteger(array) {
+        let sum=0;
+        let b;
+        for ( let i=0; i<array.length;i++){
+            if (array[i]>0){
+                b=array[i];
+                sum+=b;
+            }
+        }
+        return sum;
+    }
+    let array= [-2,34,-4,0,4,7,-9,60]
+    document.write("Tổng các số nguyên dương trong mảng là: " + checkPositiveInteger(array));
+</script>
+</body>
+</html>
